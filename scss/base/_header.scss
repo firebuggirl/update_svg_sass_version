@@ -1,0 +1,60 @@
+a {
+  text-decoration: none;
+  color: $scooter;
+  font-weight: $font-weight--bold;
+  }
+  a:hover {
+    color: $off-black;
+    fill: $off-black;
+
+
+  }
+ a:hover .nav-hover {
+    fill:  $off-black;
+    animation: bounce .5s ease-out forwards;
+}
+
+header {
+  padding-top: 10px;
+}
+
+  #container > header nav {
+    padding-bottom: 50px;
+    text-align: left;
+    @include bp(tablet){
+      text-align: center;
+
+    }
+
+}
+
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    @include bp(mobile_small){
+    @include flex;
+    @include flex_justify_center;
+    margin-left: -22%;
+    padding-bottom: 2px;
+    }
+
+  }
+  header h1 {
+    line-height: 1em;
+  }
+
+
+  #nav-contact,
+  #nav-heart{
+    height: 13px;
+    fill: $scooter;
+
+  }
+
+  #nav-contact:hover{
+      fill: $off-black;
+  }
+  #nav-location{
+    height: 14px;
+    fill: $off-black;
+  }

@@ -1,0 +1,14 @@
+{
+  "name": "svg_update_v2",
+  "version": "1.0.0",
+  "description": "SVG Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juliette Tworsey",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-svgmin": "^1.2.2"
+  }
+}

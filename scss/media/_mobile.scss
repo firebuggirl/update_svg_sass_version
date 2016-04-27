@@ -1,0 +1,48 @@
+@media (max-width: 419px) {
+  #container > header nav {
+   @include flex;
+   @include flex_justify_center;
+    margin: 0px;
+
+  }
+
+main ul {
+	margin-left: 20%;
+}
+
+  #logo-brand {
+    display: none; }
+
+  #logo-text {
+    display: block;
+    position: relative;
+    color: $mustard2;
+    }
+  }
+
+
+
+
+@media (max-width: 320px) {
+
+  header {
+    margin-top: 5%;
+  }
+
+  #logo {
+    margin-top: -5%;
+  }
+
+  main {
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+   }
+
+  footer {
+    height: 2px;
+    @include flex;
+    @include flex_justify_center;
+    @include flex_align_center;
+
+}
+ }

@@ -1,0 +1,74 @@
+
+
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+
+}
+
+p {
+  max-width: 350px;
+  margin: em(35px) auto 0;
+  line-height: 2em;
+  text-align: left;
+  @include bp(mobile_small){
+    font-size: $base__font-size;
+
+  }
+}
+
+#logo-text{
+  display: none;
+
+}
+
+ #logo{
+   height: 150px;
+   width: 150px;
+ }
+ header:hover #logo{
+  @include animation_spin;
+ }
+
+ #corgi-red, #corgi-fawn,
+ #corgi-sable, #corgi-blacktan{
+   height: 200px;
+   width: 200px;
+ }
+
+main {
+ padding-top: 50px;
+ margin-bottom: 100px;
+ > h2{
+   font-size: $font-size__h2;
+ }
+}
+
+main ul {
+ padding: 0;
+ @include bp(tablet){
+   @include flex;
+   @include flex_wrap;
+   @include flex_justify_center;
+	 max-width: 70%;
+	 margin: 0 auto;
+}
+ > li{
+   display: inline-block;
+   color: $mustard2;
+   margin-right: 20px;
+ }
+}
+
+main li img {
+ margin-bottom: 15px;
+}
+
+main li span {
+ margin-left: -40px;
+}
+main li:last-child {
+ margin-right: 0;
+}

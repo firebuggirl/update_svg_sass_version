@@ -1,0 +1,95 @@
+/* --------------------------
+  SVG Styles
+--------------------------- */
+ #nav-heart-effect, #nav-location-effect, #nav-contact-effect{
+ stroke:#EAAA7F;
+ stroke-width: 1;
+ stroke-dasharray: 50;/* controls the pattern of dashes and gaps used to stroke paths */
+ stroke-dashoffset: 50;/* sets the offset distance of the dashes in a path's stroke */
+ animation: offset 5s linear forwards, fill-nav .8s 1s forwards;
+}
+#nav-heart-effect:hover, #nav-location-effect:hover, #nav-contact-effect:hover{
+stroke:#2D3339;
+stroke-width: 1;
+stroke-dasharray: 50;/* create/get stroke length*/
+stroke-dashoffset: 50;/* moves dashes and gaps- For single line paths use same value as dasharray to get live drawing effect */
+animation: offset 5s linear forwards, fill-hover .8s 1s forwards;
+}
+
+#logo-brand{
+ stroke:#EAAA7F;
+ stroke-width: 1;
+ stroke-dasharray: 250;/* create/get stroke length*/
+ stroke-dashoffset: 250;/* moves dashes and gaps- For single line paths use same value as dasharray to get live drawing effect */
+ animation: offset 5s linear forwards, fill-brand .8s 1s forwards;/* linear time function = time speed, beginning to end- Forward = browser end animation on final keyframe */
+}
+
+#nav-heart-effect:hover{
+  fill: #2D3339;
+}
+/* Nose and eye animations and transforms*/
+
+.dogs:hover path#corgi-red-eyes-nose{
+  animation: pulse .3s .5s; /* Pulse, animation duration, delay*/
+}
+.dogs:hover path#sable-nose-eyes  {
+animation: pulse .3s .5s;
+}
+
+.dogs:hover path#fawn-eyes-nose{
+    transform: scale(1.06);
+}
+
+.dogs:hover path#blacktan-eyes-nose{
+    transform: scale(1.06);
+}
+
+/* Eyebrow animations */
+
+.dogs:hover path#corgi-red-eyebrows{
+   animation: grow 1.2s ease-out backwards;
+}
+
+.dogs:hover path#corgi-sable-eyebrows{
+   animation: grow 1.2s ease-out backwards;
+}
+
+.dogs:hover path#fawn-eyebrows{
+  animation: slide .5s forwards;
+}
+
+.dogs:hover path#blacktan-eyebrows{
+  animation: slide .5s forwards;
+}
+
+/* Transitions and Tranfomrs*/
+
+.dogs *{
+  transform-origin: 0px 0px;/* Use pixels based on x and Y coordinates instead of % for support in FireFox, Chrome, and Safari */
+}
+/* Ear transforms */
+
+#corgi-red-ears, #sable-ears, #blacktan-ears, #fawn-ears{
+  transition: .4s ease;
+  /*transform-origin: (0px, 0px);*/
+
+}
+
+.dogs:hover #corgi-red-ears{
+  transform: rotate(1.5deg);
+}
+
+.dogs:hover #sable-ears{
+  transform: rotate(1.5deg);
+
+}
+
+.dogs:hover #blacktan-ears{
+  transform: rotate(1.5deg);
+
+}
+
+.dogs:hover #fawn-ears{
+  transform: rotate(1.5deg);
+
+}
