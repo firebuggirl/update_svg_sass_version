@@ -10,14 +10,26 @@ main ul {
 	margin-left: 20%;
 }
 
-  #logo-brand {
-    display: none; }
+#logo-brand {
+  display: none;
+}
 
-  #logo-text {
-    display: block;
-    position: relative;
-    color: $mustard2;
-    }
+/* Unhide h1 Logo Brand */
+#logo-text {
+  position: relative;
+  display: block;
+  top: 5px;
+  left: 5px;
+  color: $mustard2;
+
+
+
+
+     }
+
+
+  
+
   }
 
 

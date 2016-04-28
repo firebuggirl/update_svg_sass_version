@@ -28,8 +28,13 @@ p {
   }
 }
 
+/* Better for SEO to position text off screen with negative values rather
+   then using display: none  */
 #logo-text{
-  display: none;
+  /*display: none;*/
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
 
 }
 

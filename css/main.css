@@ -423,8 +423,13 @@ p {
     p {
       font-size: 16px; } }
 
+/* Better for SEO to position text off screen with negative values rather
+   then using display: none  */
 #logo-text {
-  display: none; }
+  /*display: none;*/
+  position: absolute;
+  top: -10000px;
+  left: -10000px; }
 
 #logo {
   height: 150px;
@@ -744,9 +749,12 @@ Keyframes
   #logo-brand {
     display: none; }
 
+  /* Unhide h1 Logo Brand */
   #logo-text {
-    display: block;
     position: relative;
+    display: block;
+    top: 5px;
+    left: 5px;
     color: #ba8058; } }
 @media (max-width: 320px) {
   header {
