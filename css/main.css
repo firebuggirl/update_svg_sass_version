@@ -399,6 +399,16 @@ each directive (in mixins partial) to dynamically create a class name for each k
 .btn--warning
 .btn--info
 */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url("../out/background.svg") #edeff0;
+  background-size: 53px 53px; }
+
 #container {
   max-width: 960px;
   background: #fff;
