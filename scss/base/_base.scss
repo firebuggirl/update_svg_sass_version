@@ -4,15 +4,15 @@ body {
   text-align: center;
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
-  color: #111;
-  background: url("../out/background.svg") #edeff0;
+  color: $off-black;
+  background: url("../out/background.svg") $grey-ultra-light;
   background-size: 53px 53px;
 }
 
 
 #container {
   max-width: 960px;
-  background: #fff;
+  background: $white;
   margin: 0 auto;
 
 }
@@ -31,11 +31,9 @@ p {
 /* Better for SEO to position text off screen with negative values rather
    then using display: none  */
 #logo-text{
-  /*display: none;*/
   position: absolute;
   top: -10000px;
   left: -10000px;
-
 }
 
  #logo{

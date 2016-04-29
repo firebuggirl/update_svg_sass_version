@@ -1,15 +1,15 @@
 /* --------------------------
   SVG Styles
 --------------------------- */
- #nav-heart-effect, #nav-location-effect, #nav-contact-effect{
- stroke:#EAAA7F;
+.nav-hover{
+ stroke: $tan;
  stroke-width: 1;
  stroke-dasharray: 50;/* controls the pattern of dashes and gaps used to stroke paths */
  stroke-dashoffset: 50;/* sets the offset distance of the dashes in a path's stroke */
  animation: offset 5s linear forwards, fill-nav .8s 1s forwards;
 }
-#nav-heart-effect:hover, #nav-location-effect:hover, #nav-contact-effect:hover{
-stroke:#2D3339;
+.nav-hover:hover{
+stroke: $off-black;
 stroke-width: 1;
 stroke-dasharray: 50;/* create/get stroke length*/
 stroke-dashoffset: 50;/* moves dashes and gaps- For single line paths use same value as dasharray to get live drawing effect */
@@ -17,23 +17,21 @@ animation: offset 5s linear forwards, fill-hover .8s 1s forwards;
 }
 
 #logo-brand{
- stroke:#EAAA7F;
+ stroke: $tan;
  stroke-width: 1;
  stroke-dasharray: 250;/* create/get stroke length*/
  stroke-dashoffset: 250;/* moves dashes and gaps- For single line paths use same value as dasharray to get live drawing effect */
  animation: offset 5s linear forwards, fill-brand .8s 1s forwards;/* linear time function = time speed, beginning to end- Forward = browser end animation on final keyframe */
 }
 
-#nav-heart-effect:hover{
-  fill: #2D3339;
-}
+
 /* Nose and eye animations and transforms*/
 
 .dogs:hover path#corgi-red-eyes-nose{
   animation: pulse .3s .5s; /* Pulse, animation duration, delay*/
 }
 .dogs:hover path#sable-nose-eyes  {
-animation: pulse .3s .5s;
+  animation: pulse .3s .5s;
 }
 
 .dogs:hover path#fawn-eyes-nose{

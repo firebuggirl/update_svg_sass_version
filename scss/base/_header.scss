@@ -9,10 +9,16 @@ a {
 
 
   }
+
+
  a:hover .nav-hover {
     fill:  $off-black;
-    animation: bounce .5s ease-out forwards;
+    /*animation: bounce .5s ease-out forwards;*/
+    @include animation_spin;
 }
+
+
+
 
 header {
   padding-top: 10px;
@@ -51,10 +57,7 @@ header {
 
   }
 
-  #nav-contact:hover{
-      fill: $off-black;
-  }
   #nav-location{
     height: 14px;
-    fill: $off-black;
+    fill: $scooter;
   }
