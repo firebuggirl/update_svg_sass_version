@@ -647,10 +647,13 @@ Keyframes
   animation: pulse .3s .5s; }
 
 .dogs:hover path#fawn-eyes-nose {
-  transform: scale(1.06); }
+  transform: scale(1.06);
+  display: block;
+  padding-top: 1px; }
 
 .dogs:hover path#blacktan-eyes-nose {
-  transform: scale(1.06); }
+  transform: scale(1.06);
+  display: block; }
 
 /* Eyebrow animations */
 .dogs:hover path#corgi-red-eyebrows {

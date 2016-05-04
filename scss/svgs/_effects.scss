@@ -35,11 +35,15 @@ animation: offset 5s linear forwards, fill-hover .8s 1s forwards;
 }
 
 .dogs:hover path#fawn-eyes-nose{
-    transform: scale(1.06);
+  transform: scale(1.06);
+  display: block;
+  padding-top: 1px;
+
 }
 
 .dogs:hover path#blacktan-eyes-nose{
     transform: scale(1.06);
+    display:block;
 }
 
 /* Eyebrow animations */
