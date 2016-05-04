@@ -1,7 +1,7 @@
 @media (max-width: 768px){
   #sticky-nav{
     position: fixed;
-    background-color: #52595f;
+    background-color: $medium-dark-grey;
     width: 100%;
     top: 0;
     z-index: 2;

@@ -51,10 +51,10 @@ main ul {
    }
 
   footer {
-    height: 2px;
     @include flex;
     @include flex_justify_center;
     @include flex_align_center;
+    height: 2px;
 
 }
  }

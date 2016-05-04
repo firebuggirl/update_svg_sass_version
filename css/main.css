@@ -530,7 +530,7 @@ header h1 {
   SVG Main Fills
 --------------------------- */
 #logo-paw {
-  fill: #f4c6a6; }
+  fill: #F2C3A2; }
 
 #corgi-red-face, #corgi-red-left-ear, #corgi-red-right-ear,
 #corgi-sable-eyebrows, #blacktan-eyebrows,
@@ -649,6 +649,7 @@ Keyframes
 .dogs:hover path#fawn-eyes-nose {
   transform: scale(1.06);
   display: block;
+  /* Note: setting transform:scale to block fixes issue of transform not working properly in Chrome and in Safari */
   padding-top: 1px; }
 
 .dogs:hover path#blacktan-eyes-nose {
@@ -770,12 +771,12 @@ Keyframes
     padding-bottom: 10px; }
 
   footer {
-    height: 2px;
     display: flex;
     -moz-display: flex;
     justify-content: center;
     -webkit-justify-content: center;
     align-self: center;
-    -moz-align-self: center; } }
+    -moz-align-self: center;
+    height: 2px; } }
 
 /*# sourceMappingURL=main.css.map */

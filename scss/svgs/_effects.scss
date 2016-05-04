@@ -36,7 +36,7 @@ animation: offset 5s linear forwards, fill-hover .8s 1s forwards;
 
 .dogs:hover path#fawn-eyes-nose{
   transform: scale(1.06);
-  display: block;
+  display: block; /* Note: setting transform:scale to block fixes issue of transform not working properly in Chrome and in Safari */
   padding-top: 1px;
 
 }
