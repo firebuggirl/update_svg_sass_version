@@ -538,9 +538,11 @@ header h1 {
   fill: #ba8058; }
 
 #corgi-red-eyes-nose, #fawn-eyes-nose,
-#sable-nose-eyes, #blacktan-eyes-nose,
-#corgi-red-eyebrows {
+#sable-nose-eyes, #blacktan-eyes-nose {
   fill: #2D3339; }
+
+#corgi-red-eyebrows {
+  fill: #EAAA7F; }
 
 #corgi-red-beak, #fawn-beak,
 #sable-beak, #blacktan-beak {
