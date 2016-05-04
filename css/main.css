@@ -474,6 +474,9 @@ main li span {
 main li:last-child {
   margin-right: 0; }
 
+footer {
+  padding-bottom: 30px; }
+
 a {
   text-decoration: none;
   color: #39add1;
