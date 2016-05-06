@@ -27,6 +27,11 @@
     margin-top: 100px;
   }
 
+  main{
+    margin-bottom: 70px;
+    padding-bottom: 40px;
+  }
+
   footer {
     @include fixed_footer_nav;
     @include flex;

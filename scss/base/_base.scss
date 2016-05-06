@@ -22,6 +22,7 @@ p {
   margin: em(35px) auto 0;
   line-height: 2em;
   text-align: left;
+  padding-top: 50px;
   @include bp(mobile_small){
     font-size: $base__font-size;
 
